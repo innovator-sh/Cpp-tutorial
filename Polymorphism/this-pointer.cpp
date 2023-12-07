@@ -10,11 +10,14 @@ using namespace std;
 class student {
     int id;
     char name[30]; 
+
 public:
+
     student(int id, char name[]) {
     	this->id = id;
     	strcpy(this->name, name);
 	}
+
     void display() {
         cout << "\nStudent ID: " << this->id << endl;
         cout << "Name: " << this->name << endl;
@@ -24,4 +27,6 @@ public:
 int main() {
     student s(106, "Bjarne");
     s.display();
+
+    return 0;
 }

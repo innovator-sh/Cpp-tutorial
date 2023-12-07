@@ -13,18 +13,13 @@ public:
 	virtual void print() {
 		cout << "Print base class.\n";
 	}
-	/*void show() {
-		cout << "Show base class.\n";
-	}*/
 };
+
 class derived : public base {
 public:
 	void print() {
 		cout << "Print derived class.\n";
 	}
-	/*void show() {
-		cout << "Show derived class.\n";
-	}*/
 };
 
 int main() {
