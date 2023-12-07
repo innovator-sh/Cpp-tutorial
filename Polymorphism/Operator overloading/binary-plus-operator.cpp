@@ -1,35 +1,49 @@
 /*
+To overload binary + operator
 Let's take the following example,
 */
 
 #include <iostream>
 using namespace std;
 
-class sum {
-	int x, y;
+class Number {
+	float a, b;
+		
 public:
-	void get(int a, int b) {
-		x=a;
-		y=b;
-	}
 	
+	void accept() {
+		cout << "Enter value of a : ";
+		cin >> a;
+		cout << "Enter value of b : ";
+		cin >> b;
+		cout << "\n";
+	}
 	void display() {
-		cout << x << "\n" << y << endl;
+		cout << "A : " << a << "\nB : " << b << endl;
 	}
 	
-	void operator+(sum &s){
-		x = x + s.x;
-		y = y + s.y;
-		display();
+	Number operator+(Number n){
+		Number obj;
+		a = a + n.a;
+		b = b + n.b;
+		
+		obj.a = a;
+		obj.b = b;
+	
+		return obj;
 	}
 };
 
 int main() {
-	
-	sum t1, t2;
-	t1.get(70, 30);
-	t2.get(30, 50);
-	t1+t2;
 
-    return 0;
+	Number n1, n2, n3;
+	n1.accept();
+	n2.accept();
+	
+	n3 = n1 + n2;
+	
+	cout << "\n\n";
+	n3.display();
+	
+	return 0;
 }
