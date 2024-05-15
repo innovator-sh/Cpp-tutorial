@@ -8,7 +8,6 @@ using namespace std;
 int main() {
 
     char str[50] = "Object oriented Programming";
-
     ofstream outf("text.txt");
     
     outf << str; //Writing data in the file
