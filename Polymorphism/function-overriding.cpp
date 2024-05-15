@@ -13,11 +13,11 @@ public:
     
     abc() { // Using default constructor
     	x=2;
-	}
+    }
 	
-	void display() {
-		cout << "Value of x: " << x << endl;
-	}
+    void display() {
+	cout << "Value of x: " << x << endl;
+    }
 };
 
 class xyz : public abc {
@@ -26,16 +26,16 @@ public:
     
     xyz(){
     	y=5;
-	}
+    }
 	
-	void display() {
-		cout << "Value of y: " << y;
-	}
+    void display() {
+	cout << "Value of y: " << y;
+    }
 };
 
 int main() {
-	xyz ob;
-	ob.display();
+    xyz ob;
+    ob.display();
 
-	return 0;
+    return 0;
 }
