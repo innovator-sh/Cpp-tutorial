@@ -25,6 +25,7 @@ int main() {
         outf.put(ch);
     }
     inf2.close();
+    outf.close();
 
     cout << "Merge task completed.";
 
