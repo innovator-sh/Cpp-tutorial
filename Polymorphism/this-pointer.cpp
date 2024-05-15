@@ -16,7 +16,7 @@ public:
     student(int id, char name[]) {
     	this->id = id;
     	strcpy(this->name, name);
-	}
+    }
 
     void display() {
         cout << "\nStudent ID: " << this->id << endl;
